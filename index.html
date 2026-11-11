@@ -122,10 +122,10 @@ html{scroll-behavior:smooth}
     <aside class="rail" aria-label="Your selection">
       <div class="count"><span class="num" id="num">0</span><span class="lbl">services ticked</span></div>
       <div class="picked" id="picked"><p class="empty">Nothing ticked yet. Your list builds here as you tick.</p></div>
-      <a class="btn primary" id="wa" href="https://wa.me/919182983314" target="_blank" rel="noopener">Send my list on WhatsApp</a>
+      <a class="btn primary" id="wa" href="https://wa.me/918341333373" target="_blank" rel="noopener">Send my list on WhatsApp</a>
       <button class="btn ghost" id="copy" type="button">Copy my list</button>
       <div class="status" id="status" role="status"></div>
-      <div class="contact">Busy Fox, Kadapa · WhatsApp <b>+91 91829 83314</b></div>
+      <div class="contact">Busy Fox, Kadapa · WhatsApp <b>+91 83413 33373</b></div>
     </aside>
   </div>
 
@@ -286,7 +286,7 @@ function render(){
   document.getElementById('num').textContent=total;document.getElementById('barn').textContent=total;
   const pk=document.getElementById('picked');
   pk.innerHTML=p.filter(x=>x.list.length).length?p.filter(x=>x.list.length).map(x=>`<div><h4>${esc(x.g.title)}</h4><ul>${x.list.map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>`).join(''):'<p class="empty">Nothing ticked yet. Your list builds here as you tick.</p>';
-  document.getElementById('wa').href='https://wa.me/919182983314?text='+encodeURIComponent(text());
+  document.getElementById('wa').href='https://wa.me/918341333373?text='+encodeURIComponent(text());
   try{const s={};document.querySelectorAll('input[data-k]').forEach(i=>{if(i.checked)s[i.dataset.k]=1});localStorage.setItem('rr-services',JSON.stringify(s));
     const n={};document.querySelectorAll('textarea,#who').forEach(t=>{if(t.value)n[t.id]=t.value});localStorage.setItem('rr-notes',JSON.stringify(n))}catch(e){}
 }
